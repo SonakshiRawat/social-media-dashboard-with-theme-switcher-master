@@ -1,0 +1,446 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: hsl(225, 100%, 98%);
+  width: 100%;
+  height: 11rem;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.logo {
+  vertical-align: middle;
+}
+.social {
+  position: absolute;
+  top: 0%;
+  left: 14%;
+}
+.solid {
+  color: hsl(230, 17%, 14%);
+}
+
+.overview {
+  margin-left: 14%;
+  color: hsl(228, 12%, 44%);
+}
+
+p {
+  color: hsl(228, 12%, 44%);
+  font-weight: 600;
+}
+
+.c1 {
+  padding-top: 105px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  border-top: 3px solid;
+  max-width: 37%;
+  max-height: 110px;
+  width: 11%;
+  text-align: center;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 6%;
+  padding: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0px 10px;
+}
+
+span {
+  font-weight: 600;
+  color: hsl(228, 12%, 44%);
+  padding-left: 6px;
+  margin-bottom: 50px;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.follow {
+  color: hsl(228, 12%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.facebook {
+  border-color: hsl(208, 92%, 53%);
+}
+.last {
+  color: hsl(163, 72%, 41%);
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.twitter {
+  border-color: hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-radius: 16px;
+  border-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  border-image-slice: 1;
+}
+
+.youtube {
+  border-color: hsl(348, 97%, 39%);
+}
+
+.block2 {
+  max-width: 37%;
+  width: 16%;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 6%;
+  padding: 1px 10px;
+  margin: 0px 8px;
+  margin-bottom: 10px;
+}
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+.view {
+  font-weight: 600;
+  color: hsl(228, 12%, 44%);
+}
+
+.digit {
+  color: hsl(230, 17%, 14%);
+  font-size: 30px;
+  font-weight: 700;
+}
+.percent {
+  color: hsl(163, 72%, 41%);
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.yt {
+  color: hsl(356, 69%, 56%);
+}
+
+.d1 {
+  position: absolute;
+  top: 10%;
+  right: 19%;
+}
+
+/* toggle-switch */
+.contain {
+  position: absolute;
+  top: 15.5%;
+  right: 17%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 250%;
+  height: 75px;
+  margin: 0 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+
+  border-radius: 34px;
+}
+
+.switch input {
+  display: none;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: black;
+  transition: 0.4sec;
+  border-radius: 50px;
+}
+
+input:checked + .slider::before {
+  transform: translateX(23px);
+  background-color: white;
+}
+
+@media (max-width: 1075px) {
+  .block {
+    min-width: 190px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .social {
+    left: 4%;
+  }
+
+  .d1 {
+    top: 9%;
+    right: 11%;
+  }
+
+  .overview {
+    margin-left: 4%;
+  }
+
+  .block2 {
+    min-width: 205px;
+  }
+}
+
+@media (max-width: 1006px) {
+  .block {
+    min-width: 180px;
+  }
+
+  .block2 {
+    min-width: 193px;
+  }
+
+  .contain {
+    top: 15.5%;
+    right: 8%;
+  }
+}
+
+@media (max-width: 961px) {
+  .block {
+    min-width: 160px;
+    margin: 4px;
+  }
+
+  .block2 {
+    min-width: 174px;
+    margin: 4px;
+  }
+  .d1 {
+    top: 13%;
+  }
+  .contain {
+    top: 19%;
+    right: 8%;
+  }
+}
+
+@media (max-width: 859px) {
+  .block {
+    min-width: 140px;
+  }
+
+  .block2 {
+    min-width: 155px;
+  }
+  .flexy {
+    margin: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .block {
+    min-width: 130px;
+  }
+
+  .block2 {
+    min-width: 140px;
+    margin: 8px;
+  }
+
+  .flexy {
+    margin: 5px;
+  }
+  .overview {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 727px) {
+  .block {
+    padding: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .block2 {
+    min-width: 140px;
+    padding: 15px 10px;
+  }
+
+  .flexy {
+    margin: 1px;
+  }
+}
+
+@media (max-width: 697px) {
+  .social {
+    left: 6%;
+  }
+
+  .slider {
+    width: 80%;
+    height: 25px;
+  }
+
+  .slider:before {
+    height: 20px;
+    width: 20px;
+    left: 2px;
+  }
+  .contain {
+    top: 30%;
+    right: 11%;
+  }
+
+  .d1 {
+    top: 22%;
+    left: 6%;
+  }
+
+  .c1 {
+    padding-top: 145px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 270px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 8px;
+  }
+
+  .block2 {
+    width: 285px;
+    margin: 8px;
+  }
+
+  .flexy {
+    margin: 15px;
+  }
+  .overview {
+    margin-left: 6%;
+  }
+}
+
+@media (max-width: 445px) {
+  .social {
+    left: 16%;
+    font-size: 11px;
+  }
+  .contain {
+    right: 23%;
+  }
+
+  .d1 {
+    left: 16%;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .block {
+    padding: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 200px;
+  }
+
+  .block2 {
+    min-width: 230px;
+  }
+
+  .overview {
+    margin-left: 10%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .social {
+    left: 16%;
+    font-size: 9px;
+  }
+  .contain {
+    top: 24%;
+    right: 23%;
+  }
+
+  .d1 {
+    left: 16%;
+    top: 16.7%;
+  }
+  .c1 {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .contain {
+    top: 13.5%;
+    right: 17%;
+  }
+}
+@media (min-width: 1441px) {
+  .c1 {
+    padding-top: 165px;
+  }
+  .social {
+    left: 21%;
+    font-size: 16px;
+  }
+  .contain {
+    top: 11%;
+    right: 22%;
+  }
+  .d1 {
+    top: 9%;
+    right: 24%;
+  }
+  .overview {
+    margin-left: 20%;
+    font-size: 40px;
+  }
+
+  .block2 {
+    max-width: 350px;
+  }
+}
